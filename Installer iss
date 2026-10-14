@@ -1,0 +1,13 @@
+#define MyAppName "SEYA MUKISA COMP"
+#define MyAppVersion "1.0.0"
+[Setup]
+AppName={#MyAppName}
+AppVersion={#MyAppVersion}
+DefaultDirName={commoncf64}\VST3
+DisableDirPage=yes
+OutputDir=.
+OutputBaseFilename=SEYA_MUKISA_COMP_Windows_Installer
+Compression=lzma
+WizardStyle=modern
+[Files]
+Source: "Builds\VisualStudio2022\x64\Release\VST3\*"; DestDir: "{commoncf64}\VST3"; Flags: ignoreversion recursesubdirs createallsubdirs
